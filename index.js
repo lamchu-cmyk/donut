@@ -71,9 +71,9 @@ setInterval(() => {
     stdout.write(output[i]);
   }
 
-  // Increment rotation angles
-  A += 0.07;
-  B += 0.03;
+  // Increment rotation angles - ĐỔI CHIỀU QUAY TẠI ĐÂY: thay đổi dấu + thành - để đảo chiều
+  A += 0.07; // Đổi thành A -= 0.07 để quay ngược chiều trục X
+  B += 0.03; // Đổi thành B -= 0.03 để quay ngược chiều trục Z
 }, 50);
 
 // Restore cursor when process exits
